@@ -1,3 +1,4 @@
 node_modules
 src/config/variables.json
 variables.json
+.env
