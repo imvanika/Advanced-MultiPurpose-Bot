@@ -8,8 +8,7 @@ class BaseMessageCreate {
     run(message) {
         if(message.author.bot) return;
         if(message.channel.type === 1) return;
-
-        // 
+        
     }
 }
 
