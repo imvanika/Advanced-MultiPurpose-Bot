@@ -1,4 +1,5 @@
 {
-    "token": "MTE1NDY4NTk5NTYxOTQ1NTAwNg.GMJSzN.kLn_OGGo3liHl-Ygyxnn1cX1lKsLx_YVVXWtoc",
-    "dbUrl": "mongodb+srv://vanikaxpunit:zYLeRp1MLuqqXF6z@artic.rjj2lx5.mongodb.net/?retryWrites=true&w=majority"
+    "token": "MTE1NDY4NTk5NTYxOTQ1NTAwNg.GuOp3w.CFkH9yYxLBzVJYgVvCE1eWxjl-P9zRrZ7nU1Qs",
+    "dbUrl": "mongodb+srv://vanikaxpunit:zYLeRp1MLuqqXF6z@artic.rjj2lx5.mongodb.net/?retryWrites=true&w=majority",
+    "prefix": "*"
 }
