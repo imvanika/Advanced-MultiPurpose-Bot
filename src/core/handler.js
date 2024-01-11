@@ -1,11 +1,12 @@
 const fs = require("node:fs");
-const { Collection } = require("discord.js");
+const { Collection, EmbedBuilder } = require("discord.js");
 const { connect } = require("mongoose");
 
 class BaseHandler {
     constructor(client){
         this.client= client;
         this.client.commands = new Commands();
+        this.client.embed = new BaseEmbeds();
         this.eventsLoaded = false;
         this.commandsLoaded = false;
         this.DBConnected = false;
@@ -32,7 +33,7 @@ class BaseHandler {
                 let file = require(`../commands/${dir}/${cmd}`);
                 let command = new file(this.client);
                 this.client.commands.set(command.name,command);
-                this.client.logger.cmd(`Loaded ${cmd.name}`);
+                this.client.logger.cmd(`Loaded ${command.name}`);
             })
         });
         this.client.logger.log("Finished Logging Commands to Bot....");
@@ -62,6 +63,13 @@ class BaseHandler {
 class Commands extends Collection {
     constructor() {
         super();
+    }
+}
+
+class BaseEmbeds extends EmbedBuilder{
+    constructor() {
+        super();
+        this.setColor("#2F3136");
     }
 }
 
