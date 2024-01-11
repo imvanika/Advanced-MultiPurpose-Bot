@@ -6,10 +6,10 @@ class BaseReady {
     }
     run() {
         this.client.user.setPresence({
-            activities: [
+            activities: [{
                 name: "Base Client",
                 type: 2
-            ],
+            }],
             status: "customStatus"
         });
         this.client.logger.ready(`Client is Ready with Username: ${this.client.user.username} and tag: ${this.client.user.tag}!`);
