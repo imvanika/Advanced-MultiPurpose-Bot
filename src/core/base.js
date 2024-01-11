@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const { Client } = require("discord.js");
 const Logger = require("./logger");
 const BaseHandler = require("./handler");
@@ -12,6 +14,7 @@ class BaseClient extends Client {
     }
 
     async _init() {
+        this.config.token = process.env.token;
         this.logger.log("Initiated the Bot....");
         this.handler.connecteDB();
         this.handler.loadEvents();
