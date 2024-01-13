@@ -4,7 +4,8 @@ class BaseServerIcon {
     constructor(client){
         this.client = client;
         this.name = "servericon";
-        this.aliases = ["serveri", "serverav", "sav"]
+        this.aliases = ["serveri", "serverav", "sav"];
+        this.category = "utility";
         this.run = async(message,args,prefix) => {     
             return message.reply({
                 embeds: [

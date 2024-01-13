@@ -4,6 +4,7 @@ class BasePing {
     constructor(client){
         this.client = client;
         this.name = "ping";
+        this.category = "utility";
         this.run = async(message,args,prefix) => {
             let latency = client.ws.ping;
             let ping;

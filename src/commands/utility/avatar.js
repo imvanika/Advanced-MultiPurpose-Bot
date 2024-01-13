@@ -5,6 +5,7 @@ class BaseAvatar {
         this.client = client;
         this.name = "avatar";
         this.aliases = ["av"];
+        this.category = "utility";
         this.run = async(message,args,prefix) => {
             let user;
             if(!user || user == null) user = message.guild.members.cache.get(args[0]) || message.mentions.members.first() || client.users.cache.get(args[0]) || message.author;

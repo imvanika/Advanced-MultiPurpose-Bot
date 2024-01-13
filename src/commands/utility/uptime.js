@@ -4,6 +4,7 @@ class BaseUptime {
     constructor(client) {
         this.client = client;
         this.name = "uptime";
+        this.category = "utility";
         this.run = async(message,args,prefix) => {
             return message.reply({
                 embeds: [

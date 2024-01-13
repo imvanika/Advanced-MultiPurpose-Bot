@@ -4,6 +4,7 @@ class BaseInvite {
     constructor(client){
         this.client = client;
         this.name = "invite";
+        this.category = "utility";
         this.run = async(message,args,prefix) => {
             let b1 = new ActionRowBuilder().addComponents(
                 new ButtonBuilder()

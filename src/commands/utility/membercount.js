@@ -5,6 +5,7 @@ class BaseMemberCount {
         this.client = client;
         this.name = "membercount";
         this.aliases = ["mc"];
+        this.category = "utility";
         this.run = async(message,args,prefix) => {
             
             return message.reply({

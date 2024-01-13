@@ -5,6 +5,7 @@ class BaseBanner {
         this.client = client;
         this.name = "banner";
         this.subCommands = ["user", "server"];
+        this.category = "utility";
         this.run = async(message, args, prefix) => {
             if(!args[0]) {
                 return message.reply({
