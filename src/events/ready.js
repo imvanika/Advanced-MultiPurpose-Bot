@@ -2,7 +2,7 @@ class BaseReady {
     constructor(client) {
         this.client = client;
         this.name = "ready";
-        this.event = "ReadyEvent";
+        this.event = "Ready Event";
     }
     run() {
         this.client.user.setPresence({
@@ -12,7 +12,7 @@ class BaseReady {
             }],
             status: "customStatus"
         });
-        this.client.logger.ready(`Client is Ready with Username: ${this.client.user.username} and tag: ${this.client.user.tag}!`);
+        this.client.logger.ready(`Client Is Deployed With User Tag: ${this.client.user.tag}!`);
     }
 }
 
