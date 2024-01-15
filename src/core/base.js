@@ -10,6 +10,7 @@ class BaseClient extends Client {
         super(options);
         this.config = require("../config/variables.json");
         this.emoji = require("../config/emojis.json");
+        this.access = require("../config/access.js");
         this.logger = new Logger(this);
         this.handler = new BaseHandler(this);
     }
